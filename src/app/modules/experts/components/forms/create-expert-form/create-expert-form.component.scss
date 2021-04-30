@@ -26,6 +26,10 @@
     margin-bottom: 50px;
 }
 
+.mat-grid-tile .mat-figure {
+    justify-content: left;
+}
+
 .mat-grid-tile .mat-grid-tile-header,
 .mat-grid-tile .mat-grid-tile-footer {
     display: flex;
