@@ -22,7 +22,7 @@ export class AppComponent {
   ngOnInit(): void {
 
     // Load State
-    this.storeService.getState('sessionStore').subscribe((state: HeaderState) => {
+    this.storeService.getState('sessionStore').subscribe((state: SessionState) => {
 
       this.isLoggedIn = state.isLoggedIn;
     });
