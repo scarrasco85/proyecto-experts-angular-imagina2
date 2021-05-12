@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from 'src/app/guards/auth.guard';
 import { CreateTagPageComponent } from '../tags/pages/create-tag-page/create-tag-page.component';
 import { ExpertDetailFormComponent } from './components/forms/expert-detail-form/expert-detail-form.component';
 import { CreateExpertPageComponent } from './pages/create-expert-page/create-expert-page.component';
@@ -7,15 +8,18 @@ import { CreateExpertPageComponent } from './pages/create-expert-page/create-exp
 const routes: Routes = [
   {
     path: 'tags/nueva',
-    component: CreateTagPageComponent
+    component: CreateTagPageComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'experts/nuevo',
-    component: CreateExpertPageComponent
+    component: CreateExpertPageComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'experts/:id',
-    component: ExpertDetailFormComponent
+    component: ExpertDetailFormComponent,
+    canActivate: [AuthGuard]
   }
 ];
 

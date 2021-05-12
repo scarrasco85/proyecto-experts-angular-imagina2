@@ -1,0 +1,194 @@
+@font-face {
+    font-family: "Inter";
+    // src: url("../../../fonts/Inter-VariableFont_slnt\wght.ttf");
+}
+
+//toda la vista
+.frame914 {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+//parte izquierda de la vista
+.frame946 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+    background: radial-gradient(109.66% 112.15% at -1.89% -1.44%, #FFE81D 0%, #00D1C5 100%);
+}
+
+//logo experts
+.frame14 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0px;
+    position: absolute;
+    width: 174.06px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+    div {
+        margin: 5px;
+    }
+}
+
+.frame946-centro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 30%;
+}
+
+.frame946-centro-titulo {
+    text-align: center;
+    h1 {
+        font-family: Inter;
+        font-style: normal;
+        line-height: normal;
+        font-weight: 800;
+        font-size: xx-large;
+        color: #FFFFFF;
+    }
+}
+
+.frame946-centro-texto {
+    text-align: center;
+    p {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        color: #FFFFFF;
+    }
+}
+
+.frame946-centro-boton {
+    margin-top: 25px;
+    button {
+        background: transparent;
+        border: 2px solid white;
+        color: white;
+        box-sizing: border-box;
+        width: 130px;
+        height: 50px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+}
+
+// parte derecha de la vista
+.frame945 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    background-color: #E5E5E5;
+}
+
+.frame945-centro {
+    width: 55%;
+    height: 50%;
+}
+
+.frame945-centro-bienvenido {
+    text-align: left;
+    h1 {
+        font-family: Inter;
+        font-style: normal;
+        line-height: normal;
+        font-weight: 800;
+        font-size: xx-large;
+        color: #0ED28C;
+    }
+}
+
+.frame945-centro-inicia-sesion {
+    p {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
+
+.frame945-centro-form {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 16px rgba(117, 114, 150, 0.15);
+    border-radius: 4px;
+    div {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    input {
+        margin-left: 20px;
+        background: #FFFFFF;
+        border: 1px solid #F0F1F5;
+        box-sizing: border-box;
+        border-radius: 4px;
+        width: 90%;
+        height: 40px;
+        padding: 5px;
+    }
+}
+
+.form-email {
+    margin-left: 30px;
+}
+
+.form-password {
+    margin-left: 30px;
+}
+
+.form-olvidado {
+    margin-left: 20px;
+    color: #0ED28C;
+}
+
+.login-error {
+    margin-left: 20px;
+    color: red;
+}
+
+.form-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    button {
+        all: unset;
+        margin-right: 20px;
+        background: #0ED28C;
+        color: white;
+        box-sizing: border-box;
+        width: 130px;
+        height: 50px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
+
+.form-nuevo-usuario {
+    span {
+        color: #0ED28C;
+    }
+}

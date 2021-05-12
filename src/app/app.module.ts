@@ -29,6 +29,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ExpertsModule } from './modules/experts/experts.module';
 import { TagsModule } from './modules/tags/tags.module';
 import { SnackBarComponent } from './components/snack-bar/snack-bar.component';
+import { AuthModule } from './auth/auth.module';
 
 
 
@@ -47,6 +48,7 @@ import { SnackBarComponent } from './components/snack-bar/snack-bar.component';
     HttpClientModule,
     ExpertsModule,
     TagsModule,
+    AuthModule,
     // BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
