@@ -45,25 +45,21 @@ export class LoginComponent implements OnInit{
 
   login(): void{
 
-    console.log('Ehtroo');
    // const { email, password } = this.loginForm.value;
     this.user.email =  this.loginForm.value.email;
     this.user.password = this.loginForm.value.password;
-    console.log('email',this.loginForm.value.email);
+
 
     this.authService.login(this.user).subscribe((response) => {
 
       //Obtaint the token
-      console.log('Token: ', response.token)
       sessionStorage.setItem('Token', response.token); 
-
-      
 
       this.authService.setLoggedIn(true);
      
       this.router.navigate(['/experts']);
 
-       // Update title in HeaderState
+       // Update state is logged
        this.storeService.updateState({
         type: ACTION_CHANGE_IS_LOGGED_IN,
         payload: true
