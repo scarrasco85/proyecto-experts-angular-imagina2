@@ -21,6 +21,8 @@ export class AppComponent {
 
   ngOnInit(): void {
 
+    this.isLoggedIn = false;
+
     // Load State
     this.storeService.getState('sessionStore').subscribe((state: SessionState) => {
 
