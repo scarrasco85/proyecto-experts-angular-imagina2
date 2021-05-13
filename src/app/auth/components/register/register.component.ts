@@ -36,13 +36,11 @@ export class RegisterComponent implements OnInit {
 
   register(): void{
 
-    console.log('Ehtroo');
    // const { email, password } = this.loginForm.value;
    this.user.username =  this.registerForm.value.username;
     this.user.email =  this.registerForm.value.email;
     this.user.password = this.registerForm.value.password;
     //console.log('email',this.loginForm.value.email);
-    console.log('Usuario: ', this.user);
 
     this.authService.register(this.user).subscribe((response) => {
 
